@@ -1,4 +1,4 @@
-import type {Stage, SubjectSequence} from '../../../core/src/schema';
+import type {Stage, StageRegion, SubjectSequence} from '../../../core/src/schema';
 
 export const numericStageKeys = ['x', 'y', 'width', 'height', 'scale', 'rotation', 'opacity', 'surfaceOpacity'] as const;
 type NumericStageKey = (typeof numericStageKeys)[number];
@@ -57,3 +57,15 @@ export const stageViewport = (structure: string, placement: string, width: numbe
   void structure; void placement;
   return {width, height, fit: 1};
 };
+
+/** Regions remain static within the stage; only the outer stage pose animates. */
+export const isFullStageRegion = (region?: StageRegion): boolean => !region ||
+  (region.x === 0 && region.y === 0 && region.width === 1 && region.height === 1);
+
+/** Return physical pixels without a design-canvas scale or typography shrink. */
+export const stageRegionRect = (region: StageRegion | undefined, width: number, height: number) => ({
+  left: (region?.x ?? 0) * width,
+  top: (region?.y ?? 0) * height,
+  width: (region?.width ?? 1) * width,
+  height: (region?.height ?? 1) * height,
+});

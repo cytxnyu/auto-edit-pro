@@ -1,6 +1,6 @@
 {
   "name": "ai-self-media-video-packaging-skill",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "private": true,
   "type": "module",
   "description": "An Agent Skill for packaging talking-head videos with Remotion, HyperFrames, evidence cards, and programmatic line illustrations.",

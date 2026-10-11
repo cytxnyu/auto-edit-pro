@@ -18,6 +18,7 @@
 ## 配置合同
 
 - `beat.stage.x/y/width/height`：相对输出画幅的比例，x/y 是左上位置；可以越过边界，尺寸没有固定最大值。
+- `contentRegion` / `styleRegion`（0.7.1，可选）：各为相对 stage 的静态 `{x,y,width,height}` 子视口。x/y 在 `[0,1]`，width/height 在 `(0,1]`，右/下边界不超过 1；越界、非有限值、额外字段或 keyframe 中的区域均拒绝。省略或 `{x:0,y:0,width:1,height:1}` 保持原渲染。语义结构仍为真实注册组件，字体保持实际像素；风格仍只有一个，StyleBackdrop 按区域实际宽高绘制，不做截取后缩小。部分风格区外只铺同 palette.canvas 平底；`transparent` 仍不生成底面。区域可重叠或分开，按每个镜头实际可见性设计，不强制左右布局。整体 stage 仍可按原 keyframes 移动，区域本身不动画。改区后须重新绑定并检查实际 Gate C 合成。
 - `scale/rotation/opacity`：整体缩放、角度、透明度；`surfaceOpacity` 仅控制组件底面。
 - `surface`：`template` 使用当前组件底面，`transparent` 去掉公共底面，`opaque` 使用实底；有 `beat.visualStyle` 时按该风格处理材质，没有该字段时维持旧版表现。
 - `depth`：`front` 或 `behind-subject`。前后切换还可写在 `keyframes` 中；切换需设计遮挡交接，避免突跳。

@@ -51,13 +51,21 @@ const color = z.string().regex(/^#[0-9a-f]{6}$/i, 'Expected a six-digit hex colo
 const finite = z.number().finite();
 const alpha = z.number().min(0).max(1);
 const depth = z.enum(['front', 'behind-subject']);
+/** Static subviewport, normalized to the stage (not the output canvas). */
+export const StageRegionSchema = z.object({
+  x: finite.min(0).max(1), y: finite.min(0).max(1),
+  width: finite.positive().max(1), height: finite.positive().max(1),
+}).strict().superRefine((region, context) => {
+  if (region.x + region.width > 1) context.addIssue({code: 'custom', path: ['width'], message: 'Stage region right edge must be at most 1'});
+  if (region.y + region.height > 1) context.addIssue({code: 'custom', path: ['height'], message: 'Stage region bottom edge must be at most 1'});
+});
 const stageKeyframeSchema = z.object({
   frame: z.number().int().min(0), // beat-local frame
   x: finite.optional(), y: finite.optional(),
   width: finite.positive().optional(), height: finite.positive().optional(),
   scale: finite.positive().optional(), rotation: finite.optional(),
   opacity: alpha.optional(), surfaceOpacity: alpha.optional(), depth: depth.optional(),
-}).superRefine((keyframe, context) => {
+}).strict().superRefine((keyframe, context) => {
   if (Object.keys(keyframe).length < 2) context.addIssue({code: 'custom', message: 'Stage keyframe needs at least one animated property'});
 });
 export const StageSchema = z.object({
@@ -66,6 +74,8 @@ export const StageSchema = z.object({
   opacity: alpha.optional(), surfaceOpacity: alpha.optional(),
   depth,
   surface: z.enum(['template', 'transparent', 'opaque']),
+  contentRegion: StageRegionSchema.optional(),
+  styleRegion: StageRegionSchema.optional(),
   keyframes: z.array(stageKeyframeSchema).optional(),
   interaction: z.enum(['speech', 'gesture']).optional(),
   gesture: z.object({
@@ -209,6 +219,7 @@ export type MotionPrimitive = (typeof MOTION_PRIMITIVES)[number];
 export type IllustrationScenario = (typeof ILLUSTRATION_SCENARIOS)[number];
 export type DirectorRole = (typeof DIRECTOR_ROLES)[number];
 
+export type StageRegion = z.infer<typeof StageRegionSchema>;
 export type Stage = z.infer<typeof StageSchema>;
 export type StageKeyframe = z.infer<typeof stageKeyframeSchema>;
 export type SubjectSequence = z.infer<typeof SubjectSequenceSchema>;

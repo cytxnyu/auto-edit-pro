@@ -1,6 +1,6 @@
 # Usage
 
-Version 0.7.0: follow the [enforced workflow](../references/enforced-workflow.md) and [current four-gate contract](../references/gates.md). Flags select phases; they are not approval evidence. Explicit current-job delegation still requires actual bound review. Each scene uses one style, and every style is used at most once in a video.
+Version 0.7.1: follow the [enforced workflow](../references/enforced-workflow.md) and [current four-gate contract](../references/gates.md). Flags select phases; they are not approval evidence. Explicit current-job delegation still requires actual bound review. Each scene uses one style, and every style is used at most once in a video.
 
 ## Install
 

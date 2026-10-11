@@ -15,6 +15,17 @@ const markup = (id: Id, frame = 91, seed = 137, colors?: [string, string, string
 const geometry = (html: string): string[] => html.match(/\s(?:d|points|x|y|cx|cy|r|rx|ry|width|height|transform)="[^"]*"/g) ?? [];
 
 describe('fifteen original component-derived decorative mechanisms', () => {
+  it('retains a readable spotlight highlight rather than an almost empty plate',()=>{
+    const html=markup('spotlight-card');
+    expect(html).toContain('stop-opacity=".78"');
+    expect(html).toContain('stroke-opacity=".70"');
+    expect(html).toContain('stroke-opacity=".65"');
+  });
+  it('gives the fluid lens a high-contrast contour and refracted field',()=>{
+    const html=markup('fluid-glass');
+    expect(html).toContain('stroke-width="2.8" stroke-opacity=".9"');
+    expect(html).toContain('stroke-width="3" stroke-opacity="0.7"');
+  });
   it('registers exactly the assigned component IDs', () => expect(Object.keys(catalogComponentEffects).sort()).toEqual([...ids].sort()));
   it.each(ids)('%s remains geometrically animated after foreground settling', id => {
     const a = markup(id, 91);

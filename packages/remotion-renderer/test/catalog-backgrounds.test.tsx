@@ -16,6 +16,16 @@ const geometry=(markup:string):string=>Array.from(markup.matchAll(/\s(d|points|x
 const digest=(text:string):string=>createHash('sha256').update(text).digest('hex');
 
 describe('twenty original catalog background adaptations',()=>{
+  it('keeps galaxy stars above subpixel size with measurable depth travel at 1080p',()=>{
+    const a=render('galaxy',60,3537263989,undefined,1250,720,.78,60);
+    const b=render('galaxy',180,3537263989,undefined,1250,720,.78,60);
+    const radii=[...a.matchAll(/<circle r="([\d.]+)"/g)].map(m=>Number(m[1]));
+    expect(radii).toHaveLength(360);expect(Math.min(...radii)).toBeGreaterThanOrEqual(1.1);
+    const coords=(s:string)=>[...s.matchAll(/translate\(([-\d.]+) ([-\d.]+)\)/g)].map(m=>[Number(m[1]),Number(m[2])]);
+    const ac=coords(a),bc=coords(b);
+    expect(ac.reduce((sum,p,i)=>sum+Math.hypot(p[0]-bc[i][0],p[1]-bc[i][1]),0)/ac.length).toBeGreaterThan(20);
+    // This rejects a near-static subpixel implementation, not a visual-review PASS.
+  });
   it('contains precisely the twenty requested, distinct mechanisms',()=>{
     expect(Object.keys(catalogBackgroundEffects)).toEqual(ids);
     expect(new Set(ids.map(id=>render(id).match(/data-effect="([^"]+)"/)?.[1])).size).toBe(20);

@@ -95,12 +95,12 @@ const SpotlightCard = (p: StyleBackdropProps): ReactElement => {
   const y = 300 + 122 * Math.sin(t * .53);
   return scene(p, 'wandering-spotlight-card-surface', <>
     <defs><clipPath id={`${uid}-clip`}><rect x="150" y="100" width="700" height="400" rx="34"/></clipPath>
-      <radialGradient id={`${uid}-light`}><stop stopColor={c[1]} stopOpacity=".32"/><stop offset=".4" stopColor={c[0]} stopOpacity=".12"/><stop offset="1" stopColor={c[0]} stopOpacity="0"/></radialGradient></defs>
-    <rect x="150" y="100" width="700" height="400" rx="34" fill={c[0]} fillOpacity=".035" stroke={c[1]} strokeOpacity=".25"/>
+        <radialGradient id={`${uid}-light`}><stop stopColor={c[1]} stopOpacity=".78"/><stop offset=".4" stopColor={c[0]} stopOpacity=".28"/><stop offset="1" stopColor={c[0]} stopOpacity="0"/></radialGradient></defs>
+      <rect x="150" y="100" width="700" height="400" rx="34" fill={c[0]} fillOpacity=".06" stroke={c[1]} strokeOpacity=".70" strokeWidth="2"/>
     <g clipPath={`url(#${uid}-clip)`}>
       <circle cx={x} cy={y} r="260" fill={`url(#${uid}-light)`}/>
-      {Array.from({length: 5}, (_, i) => <path key={i} d={`M${200 + i * 150},130L${340 + i * 150},470`} fill="none" stroke={c[0]} strokeOpacity=".08"/>)}
-      <circle cx={x} cy={y} r={32 + Math.sin(t * .6) * 5} fill="none" stroke={c[1]} strokeOpacity=".15" strokeWidth="1.5"/>
+        {Array.from({length: 5}, (_, i) => <path key={i} d={`M${200 + i * 150},130L${340 + i * 150},470`} fill="none" stroke={c[0]} strokeOpacity=".25"/>)}
+        <circle cx={x} cy={y} r={32 + Math.sin(t * .6) * 5} fill="none" stroke={c[1]} strokeOpacity=".65" strokeWidth="2.5"/>
     </g>
   </>);
 };
@@ -148,12 +148,12 @@ const FluidGlass = (p: StyleBackdropProps): ReactElement => {
     const x = 60 + 880 * u;
     const lens = refract ? Math.exp(-(((x - cx) / 210) ** 2)) * Math.sin(t * .4 + i * .2) * 34 : 0;
     return [x, 75 + i * 25 + Math.sin(u * 7 + t * .21 + i * .07) * 13 + lens];
-  }))} fill="none" stroke={i % 2 ? c[0] : c[1]} strokeWidth={refract ? 3 : 1.4} strokeOpacity={refract ? .5 : .2}/>);
+    }))} fill="none" stroke={i % 2 ? c[0] : c[1]} strokeWidth={refract ? 3 : 1.4} strokeOpacity={refract ? .7 : .33}/>);
   return scene(p, 'breathing-fluid-glass-refraction-lens', <>
     <defs><clipPath id={`${uid}-lens`}><path d={outline}/></clipPath></defs>
     {field(false)}<path d={outline} fill={c[2]} opacity=".8"/>
     <g clipPath={`url(#${uid}-lens)`}>{field(true)}</g>
-    <path d={outline} fill={c[1]} fillOpacity=".045" stroke={c[1]} strokeWidth="2" strokeOpacity=".65"/>
+      <path d={outline} fill={c[1]} fillOpacity=".045" stroke={c[1]} strokeWidth="2.8" strokeOpacity=".9"/>
     <ellipse cx={cx - 72} cy={cy - 81} rx={32 + Math.sin(t) * 5} ry="10" transform={`rotate(-36 ${fix(cx - 72)} ${fix(cy - 81)})`} fill={c[1]} opacity=".19"/>
   </>);
 };

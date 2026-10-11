@@ -1,4 +1,4 @@
-# Auto Edit Pro 0.7.0 — public package verification
+# Auto Edit Pro 0.7.1 — public package verification
 
 Repository: [cytxnyu/auto-edit-pro](https://github.com/cytxnyu/auto-edit-pro)
 
@@ -10,17 +10,24 @@ Repository: [cytxnyu/auto-edit-pro](https://github.com/cytxnyu/auto-edit-pro)
 - Readable semantic settling, PNG frame inputs, CRF 14 H.264, BT.709 metadata, exact rounded frame boundaries, and a bound continuous PCM audio master for final muxing.
 - Source footage and authentic job evidence are supplied separately. A passing build or test suite does not certify a user's final video.
 
+## Changes in 0.7.1
+
+- Optional static `stage.contentRegion` and `stage.styleRegion` reserve independently authored normalized subviewports within one stage and one assigned style. Invalid, non-finite, out-of-bounds and keyframed region declarations are rejected. Omitted/full regions preserve the existing layout; semantic typography remains in physical pixels.
+- Partial style regions render the actual registered backdrop at their physical dimensions and retain a same-palette canvas outside them. Transparent stages remain transparent. Region placement is not a fixed left/right template and does not waive real-composition review.
+- Galaxy star density/size/contrast and depth travel are strengthened; SpotlightCard illumination and FluidGlass lens boundaries are more visible. This changes renderer fingerprints and requires fresh bound visual review, not reuse of an older aesthetic approval.
+- 124 additional tests cover region schema, all ten semantic layouts, physical sizing, single-backdrop identity, transparent/default compatibility, seek-stability, StyleProof parity and the three visibility fixes. The source-video rendering branch is unchanged.
+
 ## Verification completed for this snapshot
 
 | Check | Result |
 |---|---|
-| Vitest full suite | `Test Files 37 passed (37)`; `Tests 900 passed (900)`; exit 0 |
+| Vitest full suite | `Test Files 39 passed (39)`; `Tests 1024 passed (1024)`; exit 0 |
 | TypeScript `tsc --noEmit` | exit 0 |
 | `npm run build` | exit 0; VideoPackaging, StyleProof and three synthetic demo compositions discovered |
 | Public source scan | no credentials, private media, oversized files or private local paths in the candidate set |
-| Runtime identity | 108 package/script/manifest files match the tested implementation byte-for-byte |
+| Runtime identity | 110 package/script/manifest files match the tested implementation byte-for-byte |
 
-The package preserves the tested package name, version and dependency lockfile. `.gitattributes` disables newline normalization so published source bytes retain their implementation hashes. `docs/EXAMPLES.md` documents public synthetic examples rather than a historical private-media case; `docs/USAGE.md` identifies this repository and the current 0.7.0 workflow. SHA-256 values for every other public file are listed in `SHA256SUMS.txt`.
+The package preserves the tested package name, version and dependency lockfile. `.gitattributes` disables newline normalization so published source bytes retain their implementation hashes. `docs/EXAMPLES.md` documents public synthetic examples rather than a historical private-media case; `docs/USAGE.md` identifies this repository and the current 0.7.1 workflow. SHA-256 values for every other public file are listed in `SHA256SUMS.txt`.
 
 ## Dependency audit status
 

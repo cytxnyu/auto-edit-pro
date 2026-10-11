@@ -15,6 +15,8 @@
 - Remotion 默认渲染，以及仅限 legacy 布局/风格的可选 HyperFrames 项目生成。
 - 输入哈希、媒体探测、storyboard、截图、输出 manifest、完整解码等验收证据。
 
+0.7.1 新增可选 `stage.contentRegion` / `stage.styleRegion`：同一舞台、同一个风格内分别安置语义内容与装饰，默认画面不变，保持实际像素字号；区域为静态归一化矩形，不是固定左右模板。配置见[全屏舞台](references/whole-screen-stage.md)。
+
 ## 视觉与动画能力
 
 ### 10 种语义视觉结构

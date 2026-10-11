@@ -74,13 +74,15 @@ const Orb = (p: Props): ReactElement => {
 };
 
 const Galaxy = (p: Props): ReactElement => {
-  const c=colors(p),t=time(p,.12),q=phase(p),w=p.width,h=p.height;
-  return surface(p,'galaxy-depth-starfield',Array.from({length:170},(_,i)=>{
-    const angle=seed(p.style.seed,i*3)*TAU+t*.07;
-    const depth=mod(seed(p.style.seed,i*3+1)+t*.022),radius=Math.sqrt(depth)*Math.hypot(w,h)*.63;
+  const c=colors(p),t=time(p,.68),q=phase(p),w=p.width,h=p.height;
+  // Full-resolution stars and perceptible depth travel survive an actual
+  // composed 1080p frame; tiny subpixel specks were lost beneath text plates.
+  return surface(p,'galaxy-depth-starfield',Array.from({length:360},(_,i)=>{
+    const angle=seed(p.style.seed,i*3)*TAU+t*.15;
+    const depth=mod(seed(p.style.seed,i*3+1)+t*.055),radius=Math.sqrt(depth)*Math.hypot(w,h)*.57;
     const x=w*.5+Math.cos(angle+q)*radius,y=h*.5+Math.sin(angle+q)*radius;
-    const size=.5+depth*seed(p.style.seed,i*3+2)*2.2;
-    return <g key={i} transform={`translate(${fixed(x)} ${fixed(y)})`} fill={i%4?c[0]:c[1]} opacity={.18+depth*.65}>
+    const size=1.1+depth*seed(p.style.seed,i*3+2)*4.2;
+    return <g key={i} transform={`translate(${fixed(x)} ${fixed(y)})`} fill={i%4?c[0]:c[1]} opacity={.45+depth*.55}>
       <circle r={size}/>{i%13===0?<path d={`M-${fixed(size*5)},0H${fixed(size*5)}M0,-${fixed(size*5)}V${fixed(size*5)}`} stroke={c[1]} strokeWidth=".6"/>:null}
     </g>;
   }));
