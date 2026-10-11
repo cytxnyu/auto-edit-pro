@@ -1,0 +1,5 @@
+interface:
+  display_name: "自动剪辑pro"
+  short_description: "71 种可复现混合风格的全屏舞台动效，让组件与台词、真实手势和人物层次互动"
+  default_prompt: "用 $auto-edit-pro 包装视频，从 71 种已登记风格按固定种子不放回分配，每个画面恰好一个风格且全片不重复，保留已存方案与原声，语义跟随台词、人物互动依据真实素材，先给我看 Gate A 方案。"
+

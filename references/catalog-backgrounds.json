@@ -1,0 +1,202 @@
+[
+  {
+    "id": "aurora",
+    "name": "Aurora",
+    "category": "backgrounds",
+    "url": "https://reactbits.dev/backgrounds/aurora",
+    "sourceUrl": "https://github.com/DavidHDev/react-bits/blob/main/src/content/Backgrounds/Aurora/Aurora.jsx",
+    "mechanism": "Noise-shaped luminous aurora height field and blended colour stops; amplitude, blend, speed.",
+    "adaptation": "Layered undulating light curtains and tapering vertical rays, computed directly from frames.",
+    "verified": true
+  },
+  {
+    "id": "soft-aurora",
+    "name": "SoftAurora",
+    "category": "backgrounds",
+    "url": "https://reactbits.dev/backgrounds/soft-aurora",
+    "sourceUrl": "https://github.com/DavidHDev/react-bits/blob/main/src/content/Backgrounds/SoftAurora/SoftAurora.jsx",
+    "mechanism": "Layered low-frequency noise aurora bands with bandHeight, bandSpread, octaveDecay and colour drift.",
+    "adaptation": "Broad overlapping blurred light bands with slowly changing path geometry, distinct from the sharp aurora curtain.",
+    "verified": true
+  },
+  {
+    "id": "silk",
+    "name": "Silk",
+    "category": "backgrounds",
+    "url": "https://reactbits.dev/backgrounds/silk",
+    "sourceUrl": "https://github.com/DavidHDev/react-bits/blob/main/src/content/Backgrounds/Silk/Silk.jsx",
+    "mechanism": "Animated trigonometric satin shading, rotation, scale and fine-grain intensity.",
+    "adaptation": "Curved fold ribbons with moving satin highlight gradients and independently changing edges.",
+    "verified": true
+  },
+  {
+    "id": "iridescence",
+    "name": "Iridescence",
+    "category": "backgrounds",
+    "url": "https://reactbits.dev/backgrounds/iridescence",
+    "sourceUrl": "https://github.com/DavidHDev/react-bits/blob/main/src/content/Backgrounds/Iridescence/Iridescence.jsx",
+    "mechanism": "Iterated sinusoidal interference field with time-varying colour and amplitude.",
+    "adaptation": "Warped concentric interference lobes with thin alternating spectral contour lines.",
+    "verified": true
+  },
+  {
+    "id": "orb",
+    "name": "Orb",
+    "category": "backgrounds",
+    "url": "https://reactbits.dev/backgrounds/orb",
+    "sourceUrl": "https://github.com/DavidHDev/react-bits/blob/main/src/content/Backgrounds/Orb/Orb.jsx",
+    "mechanism": "Noisy luminous spherical rim with hue, hover intensity and rotational deformation.",
+    "adaptation": "Hollow energy orb composed of irregular breathing ring contours and orbital light filaments.",
+    "verified": true
+  },
+  {
+    "id": "galaxy",
+    "name": "Galaxy",
+    "category": "backgrounds",
+    "url": "https://reactbits.dev/backgrounds/galaxy",
+    "sourceUrl": "https://github.com/DavidHDev/react-bits/blob/main/src/content/Backgrounds/Galaxy/Galaxy.jsx",
+    "mechanism": "Layered procedural stars with depth, rotation, flares, twinkle and density.",
+    "adaptation": "Seeded expanding star layers with slowly rotated depth positions and cross-shaped star flares.",
+    "verified": true
+  },
+  {
+    "id": "particles",
+    "name": "Particles",
+    "category": "backgrounds",
+    "url": "https://reactbits.dev/backgrounds/particles",
+    "sourceUrl": "https://github.com/DavidHDev/react-bits/blob/main/src/content/Backgrounds/Particles/Particles.jsx",
+    "mechanism": "Three-dimensional particle point cloud with spread, projection, random sizes and rotation.",
+    "adaptation": "Projected drifting round particles with depth-scaled size and deterministic parallax.",
+    "verified": true
+  },
+  {
+    "id": "beams",
+    "name": "Beams",
+    "category": "backgrounds",
+    "url": "https://reactbits.dev/backgrounds/beams",
+    "sourceUrl": "https://github.com/DavidHDev/react-bits/blob/main/src/content/Backgrounds/Beams/Beams.jsx",
+    "mechanism": "Stacked tall plane meshes deformed by procedural noise and lit by a directional source.",
+    "adaptation": "Parallel sculpted light ribbons with independently displaced edges and shaded cross-sections.",
+    "verified": true
+  },
+  {
+    "id": "light-rays",
+    "name": "LightRays",
+    "category": "backgrounds",
+    "url": "https://reactbits.dev/backgrounds/light-rays",
+    "sourceUrl": "https://github.com/DavidHDev/react-bits/blob/main/src/content/Backgrounds/LightRays/LightRays.jsx",
+    "mechanism": "Directional source-to-pixel ray strength, spreading, distance fade and angular distortion.",
+    "adaptation": "Fan-shaped light shafts from one off-canvas emitter with continuously moving tips and split cores.",
+    "verified": true
+  },
+  {
+    "id": "pixel-snow",
+    "name": "PixelSnow",
+    "category": "backgrounds",
+    "url": "https://reactbits.dev/backgrounds/pixel-snow",
+    "sourceUrl": "https://github.com/DavidHDev/react-bits/blob/main/src/content/Backgrounds/PixelSnow/PixelSnow.jsx",
+    "mechanism": "Depth-layered directional falling flakes rendered at a quantized pixel resolution.",
+    "adaptation": "Seeded square and cross flakes fall diagonally on a pixel lattice at depth-dependent speed.",
+    "verified": true
+  },
+  {
+    "id": "dither",
+    "name": "Dither",
+    "category": "backgrounds",
+    "url": "https://reactbits.dev/backgrounds/dither",
+    "sourceUrl": "https://github.com/DavidHDev/react-bits/blob/main/src/content/Backgrounds/Dither/Dither.jsx",
+    "mechanism": "Procedural waves quantized through an ordered colour-and-pixel dithering postprocess.",
+    "adaptation": "Original wave field selects actual tiny ordered-matrix square marks rather than only changing opacity.",
+    "verified": true
+  },
+  {
+    "id": "ripple-grid",
+    "name": "RippleGrid",
+    "category": "backgrounds",
+    "url": "https://reactbits.dev/backgrounds/ripple-grid",
+    "sourceUrl": "https://github.com/DavidHDev/react-bits/blob/main/src/content/Backgrounds/RippleGrid/RippleGrid.jsx",
+    "mechanism": "A regular grid is radially displaced by sinusoidal ripples with fade and glow.",
+    "adaptation": "A projected mesh plane lifts in radial wavefronts, with two coordinate families sharing displaced vertices.",
+    "verified": true
+  },
+  {
+    "id": "dot-grid",
+    "name": "DotGrid",
+    "category": "backgrounds",
+    "url": "https://reactbits.dev/backgrounds/dot-grid",
+    "sourceUrl": "https://github.com/DavidHDev/react-bits/blob/main/src/content/Backgrounds/DotGrid/DotGrid.jsx",
+    "mechanism": "Regular dot positions react to proximity and shock forces, then return toward their anchors.",
+    "adaptation": "Analytic moving attractor and shock envelope displace and scale a seeded regular dot lattice.",
+    "verified": true
+  },
+  {
+    "id": "threads",
+    "name": "Threads",
+    "category": "backgrounds",
+    "url": "https://reactbits.dev/backgrounds/threads",
+    "sourceUrl": "https://github.com/DavidHDev/react-bits/blob/main/src/content/Backgrounds/Threads/Threads.jsx",
+    "mechanism": "Many horizontal noise-shaped strands vary amplitude and spacing across the screen.",
+    "adaptation": "Two interwoven families of fine horizontal filaments converge and separate around a moving pinch.",
+    "verified": true
+  },
+  {
+    "id": "liquid-chrome",
+    "name": "LiquidChrome",
+    "category": "backgrounds",
+    "url": "https://reactbits.dev/backgrounds/liquid-chrome",
+    "sourceUrl": "https://github.com/DavidHDev/react-bits/blob/main/src/content/Backgrounds/LiquidChrome/LiquidChrome.jsx",
+    "mechanism": "Iterative trigonometric coordinate distortion produces sharp reflective liquid bands.",
+    "adaptation": "Continuous molten reflective contours fill the stage; no user imagery is distorted.",
+    "verified": true
+  },
+  {
+    "id": "prism",
+    "name": "Prism",
+    "category": "backgrounds",
+    "url": "https://reactbits.dev/backgrounds/prism",
+    "sourceUrl": "https://github.com/DavidHDev/react-bits/blob/main/src/content/Backgrounds/Prism/Prism.jsx",
+    "mechanism": "A rotating pyramid distance field is ray-marched with glow and multicolour accumulation.",
+    "adaptation": "Projected rotating triangular pyramid faces and luminous facet edges, generated with deterministic 3D math.",
+    "verified": true
+  },
+  {
+    "id": "dark-veil",
+    "name": "DarkVeil",
+    "category": "backgrounds",
+    "url": "https://reactbits.dev/backgrounds/dark-veil",
+    "sourceUrl": "https://github.com/DavidHDev/react-bits/blob/main/src/content/Backgrounds/DarkVeil/DarkVeil.jsx",
+    "mechanism": "A coordinate-network colour field is warped over time with optional scanlines and noise.",
+    "adaptation": "Original dim flowing veil silhouettes and restrained scanlines, without copying the upstream network weights.",
+    "verified": true
+  },
+  {
+    "id": "gradient-blinds",
+    "name": "GradientBlinds",
+    "category": "backgrounds",
+    "url": "https://reactbits.dev/backgrounds/gradient-blinds",
+    "sourceUrl": "https://github.com/DavidHDev/react-bits/blob/main/src/content/Backgrounds/GradientBlinds/GradientBlinds.jsx",
+    "mechanism": "Repeated gradient strips respond to a moving spotlight with mirror, distortion and shine controls.",
+    "adaptation": "Vertical folding gradient slats carry a travelling curved highlight and continuously move their edges.",
+    "verified": true
+  },
+  {
+    "id": "plasma",
+    "name": "Plasma",
+    "category": "backgrounds",
+    "url": "https://reactbits.dev/backgrounds/plasma",
+    "sourceUrl": "https://github.com/DavidHDev/react-bits/blob/main/src/content/Backgrounds/Plasma/Plasma.jsx",
+    "mechanism": "Ray-marched deformed volumetric tubes twist through space with emissive energy accumulation.",
+    "adaptation": "Projected twisting energy tube made of depth-ordered glowing ring cross-sections.",
+    "verified": true
+  },
+  {
+    "id": "color-bends",
+    "name": "ColorBends",
+    "category": "backgrounds",
+    "url": "https://reactbits.dev/backgrounds/color-bends",
+    "sourceUrl": "https://github.com/DavidHDev/react-bits/blob/main/src/content/Backgrounds/ColorBends/ColorBends.jsx",
+    "mechanism": "Iterative coordinate warping bends multicolour bands with controllable frequency, width and rotation.",
+    "adaptation": "Broad intertwined colour ribbons curve through the stage using independent continuously changing geometry.",
+    "verified": true
+  }
+]

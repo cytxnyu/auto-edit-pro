@@ -1,0 +1,485 @@
+{
+  "balatro": {
+    "markupSha256": "e36ebdfe5ff0a329657b03319237d8bfd3f9d1c228fbfa4f8d3b3cd45ec079cb",
+    "material": {
+      "radius": 18,
+      "fontFamily": "\"Microsoft YaHei\", Inter, sans-serif",
+      "surface": "#101a22",
+      "line": "#f3baa8",
+      "accent": "#e5654b",
+      "shadow": "0 18px 60px #00000066, inset 0 1px 0 #ffffff33",
+      "letterSpacing": "-0.025em",
+      "borderWidth": 1
+    },
+    "palette": {
+      "id": "balatro",
+      "canvas": "#15171e",
+      "surface": "#1d2029",
+      "card": "#292a34",
+      "foreground": "#fff8ef",
+      "muted": "#d2c9c4",
+      "accent": "#ed6857",
+      "line": "#73b6d5"
+    }
+  },
+  "crt-warp": {
+    "markupSha256": "3d086081b51a92ff259c5bdba781aaeb7de5bf14d45f2ced4c7eedcfdeed4c99",
+    "material": {
+      "radius": 2,
+      "fontFamily": "\"Cascadia Code\", Consolas, \"Microsoft YaHei\", monospace",
+      "surface": "#050d0a",
+      "line": "#5eddaa",
+      "accent": "#9effbb",
+      "shadow": "0 0 28px #9effbb24, inset 0 0 28px #9effbb0b",
+      "letterSpacing": "0.025em",
+      "borderWidth": 1
+    },
+    "palette": {
+      "id": "crt-warp",
+      "canvas": "#050d0a",
+      "surface": "#0c1914",
+      "card": "#14271e",
+      "foreground": "#ecfff3",
+      "muted": "#b2c8b8",
+      "accent": "#9effbb",
+      "line": "#5eddaa"
+    }
+  },
+  "cubes": {
+    "markupSha256": "302777acfbe890b589973f12ef7f01043e429c8c70c11fe725b615a920669f97",
+    "material": {
+      "radius": 0,
+      "fontFamily": "\"Microsoft YaHei\", Arial, sans-serif",
+      "surface": "#191b1f",
+      "line": "#f5e6c8",
+      "accent": "#ff9a45",
+      "shadow": "10px 10px 0 #191b1f",
+      "letterSpacing": "-0.04em",
+      "borderWidth": 2
+    },
+    "palette": {
+      "id": "cubes",
+      "canvas": "#191b1f",
+      "surface": "#27292c",
+      "card": "#353536",
+      "foreground": "#fff8e9",
+      "muted": "#d0c7b7",
+      "accent": "#ff9a45",
+      "line": "#f5e6c8"
+    }
+  },
+  "hyperspeed": {
+    "markupSha256": "163a1d5e6036186d5349725ddf23590c343d578614db7c6518f2f530d4a7196b",
+    "material": {
+      "radius": 4,
+      "fontFamily": "Inter, \"Microsoft YaHei\", sans-serif",
+      "surface": "#070b18",
+      "line": "#67e6ff",
+      "accent": "#f459be",
+      "shadow": "0 8px 36px #00000088",
+      "letterSpacing": "-0.035em",
+      "borderWidth": 1
+    },
+    "palette": {
+      "id": "hyperspeed",
+      "canvas": "#0b0715",
+      "surface": "#191024",
+      "card": "#26182e",
+      "foreground": "#fff4ff",
+      "muted": "#d4bdd7",
+      "accent": "#f34dbd",
+      "line": "#66eaf6"
+    }
+  },
+  "shape-waves": {
+    "markupSha256": "42837036cc2d34827f37d588a4b10921dde439da6225e8cb44c69fe558381fe7",
+    "material": {
+      "radius": 26,
+      "borderWidth": 1,
+      "fontFamily": "\"Microsoft YaHei\", Inter, sans-serif",
+      "surface": "#fff8ed",
+      "line": "#477e69",
+      "accent": "#bf4e30",
+      "shadow": "0 20px 54px #f6ede088, inset 0 1px 0 #477e6944",
+      "letterSpacing": "-.015em"
+    },
+    "palette": {
+      "id": "shape-waves",
+      "canvas": "#f6ede0",
+      "surface": "#fff8ed",
+      "card": "#eaddc9",
+      "foreground": "#282019",
+      "muted": "#655346",
+      "accent": "#bf4e30",
+      "line": "#477e69"
+    }
+  },
+  "ripple-distortion": {
+    "markupSha256": "9d65cc17e43de619036a8779f3ca58529cea33803b09391a1d92dfa4a9eea486",
+    "material": {
+      "radius": 20,
+      "borderWidth": 1,
+      "fontFamily": "\"Microsoft YaHei\", Inter, sans-serif",
+      "surface": "#102d38",
+      "line": "#699cfa",
+      "accent": "#60e0d4",
+      "shadow": "0 18px 44px #081c26aa, inset 0 0 24px #699cfa18",
+      "letterSpacing": "-.015em"
+    },
+    "palette": {
+      "id": "ripple-distortion",
+      "canvas": "#081c26",
+      "surface": "#102d38",
+      "card": "#173b46",
+      "foreground": "#efffff",
+      "muted": "#b3d8dd",
+      "accent": "#60e0d4",
+      "line": "#699cfa"
+    }
+  },
+  "evil-eye": {
+    "markupSha256": "2c87e9af4c342c3617b92c0c41c2e86c1a33acfea9c70a30973f0065c9765bf5",
+    "material": {
+      "radius": 40,
+      "borderWidth": 2,
+      "fontFamily": "\"Microsoft YaHei\", Inter, sans-serif",
+      "surface": "#251c36",
+      "line": "#b092ff",
+      "accent": "#d5f568",
+      "shadow": "0 20px 54px #160f2288, inset 0 1px 0 #b092ff44",
+      "letterSpacing": "-.015em"
+    },
+    "palette": {
+      "id": "evil-eye",
+      "canvas": "#160f22",
+      "surface": "#251c36",
+      "card": "#322645",
+      "foreground": "#fff3ff",
+      "muted": "#d5bddf",
+      "accent": "#d5f568",
+      "line": "#b092ff"
+    }
+  },
+  "electric-border": {
+    "markupSha256": "cee6a928375ae155c3c00e6b723fa36e88a66a054d764a54c440b22846be388f",
+    "material": {
+      "radius": 14,
+      "borderWidth": 1,
+      "fontFamily": "\"Microsoft YaHei\", Inter, sans-serif",
+      "surface": "#292114",
+      "line": "#f78e46",
+      "accent": "#ffce54",
+      "shadow": "0 0 30px #ffce5433, inset 0 0 18px #f78e4615",
+      "letterSpacing": "-.015em"
+    },
+    "palette": {
+      "id": "electric-border",
+      "canvas": "#18130a",
+      "surface": "#292114",
+      "card": "#3a2e1a",
+      "foreground": "#fff9e9",
+      "muted": "#dacba6",
+      "accent": "#ffce54",
+      "line": "#f78e46"
+    }
+  },
+  "lightning": {
+    "markupSha256": "4d8dea1d7e12f1d4450239f087bacbb6f9ab63ae83bf7bb92718d6bf7be6e27c",
+    "material": {
+      "radius": 2,
+      "borderWidth": 1,
+      "fontFamily": "\"Microsoft YaHei\", Inter, sans-serif",
+      "surface": "#19233b",
+      "line": "#8482fb",
+      "accent": "#a6c8ff",
+      "shadow": "0 0 30px #a6c8ff33, inset 0 0 18px #8482fb15",
+      "letterSpacing": ".02em"
+    },
+    "palette": {
+      "id": "lightning",
+      "canvas": "#0d142b",
+      "surface": "#19233b",
+      "card": "#24314b",
+      "foreground": "#f3f7ff",
+      "muted": "#bfceeb",
+      "accent": "#a6c8ff",
+      "line": "#8482fb"
+    }
+  },
+  "grid-motion": {
+    "markupSha256": "f487d91244a93d663d422ea114fe26cf2278ee29e4fb25b4eb6a68cdea210a3b",
+    "material": {
+      "radius": 6,
+      "borderWidth": 2,
+      "fontFamily": "\"Microsoft YaHei\", Inter, sans-serif",
+      "surface": "#1a303c",
+      "line": "#5fb5df",
+      "accent": "#ffab72",
+      "shadow": "8px 8px 0 #101e28, 9px 9px 0 #5fb5df55",
+      "letterSpacing": "-.015em"
+    },
+    "palette": {
+      "id": "grid-motion",
+      "canvas": "#101e28",
+      "surface": "#1a303c",
+      "card": "#24424e",
+      "foreground": "#f3fcff",
+      "muted": "#bad1dc",
+      "accent": "#ffab72",
+      "line": "#5fb5df"
+    }
+  },
+  "waves": {
+    "markupSha256": "3c2895420ebe2ca0a643d1027e72cb04d8376b043773f2c7f80be18efa06cdaf",
+    "material": {
+      "radius": 0,
+      "borderWidth": 1,
+      "fontFamily": "\"Microsoft YaHei\", Inter, sans-serif",
+      "surface": "#f9fbf0",
+      "line": "#bd603d",
+      "accent": "#337466",
+      "shadow": "inset 0 1px 0 #bd603d44, 0 16px 34px #ecefe466",
+      "letterSpacing": "-.015em"
+    },
+    "palette": {
+      "id": "waves",
+      "canvas": "#ecefe4",
+      "surface": "#f9fbf0",
+      "card": "#d9e0cf",
+      "foreground": "#1f332d",
+      "muted": "#496052",
+      "accent": "#337466",
+      "line": "#bd603d"
+    }
+  },
+  "metallic-paint": {
+    "markupSha256": "27c9e08ee26f0fbb0831bc52cb47e3fef7b9154eb8585eebf49d0aaba17fa3e5",
+    "material": {
+      "radius": 24,
+      "borderWidth": 2,
+      "fontFamily": "\"Microsoft YaHei\", Inter, sans-serif",
+      "surface": "#222d39",
+      "line": "#93afc5",
+      "accent": "#dae3ed",
+      "shadow": "inset 1px 1px 0 #93afc5bb, inset -2px -2px 0 #141b24, 0 12px 38px #141b2488",
+      "letterSpacing": "-.015em"
+    },
+    "palette": {
+      "id": "metallic-paint",
+      "canvas": "#141b24",
+      "surface": "#222d39",
+      "card": "#303d4c",
+      "foreground": "#f7f9fc",
+      "muted": "#c1ccd9",
+      "accent": "#dae3ed",
+      "line": "#93afc5"
+    }
+  },
+  "circular-carousel": {
+    "markupSha256": "84f8a747ac4c2b05594956b70dd7a61b7f41b1e3ebf52e16233bc85eb3641715",
+    "material": {
+      "radius": 22,
+      "borderWidth": 1,
+      "fontFamily": "\"Microsoft YaHei\", Inter, sans-serif",
+      "surface": "#35232c",
+      "line": "#d28bb3",
+      "accent": "#edba78",
+      "shadow": "0 18px 44px #24141daa, inset 0 0 24px #d28bb318",
+      "letterSpacing": "-.015em"
+    },
+    "palette": {
+      "id": "circular-carousel",
+      "canvas": "#24141d",
+      "surface": "#35232c",
+      "card": "#48313c",
+      "foreground": "#fff4ef",
+      "muted": "#dfc2c6",
+      "accent": "#edba78",
+      "line": "#d28bb3"
+    }
+  },
+  "micro-slats": {
+    "markupSha256": "fa0d1210eaced8ef2174eb97de7a3064b223968dd43f39ae0fdc8f893d9bf2f3",
+    "material": {
+      "radius": 0,
+      "borderWidth": 1,
+      "fontFamily": "\"Cascadia Code\", Consolas, \"Microsoft YaHei\", monospace",
+      "surface": "#fbf7ff",
+      "line": "#aa614a",
+      "accent": "#80549b",
+      "shadow": "inset 0 1px 0 #aa614a44, 0 16px 34px #ede8f166",
+      "letterSpacing": ".035em"
+    },
+    "palette": {
+      "id": "micro-slats",
+      "canvas": "#ede8f1",
+      "surface": "#fbf7ff",
+      "card": "#dcd3e4",
+      "foreground": "#30263a",
+      "muted": "#60506e",
+      "accent": "#80549b",
+      "line": "#aa614a"
+    }
+  },
+  "ghost-fibers": {
+    "markupSha256": "46787cba119e50c93c7d69857a17257469ccf84fd31ea5c18ccee80075c4f6e5",
+    "material": {
+      "radius": 32,
+      "borderWidth": 1,
+      "fontFamily": "\"Microsoft YaHei\", Inter, sans-serif",
+      "surface": "#1c302e",
+      "line": "#8cbd9e",
+      "accent": "#d3efe0",
+      "shadow": "0 20px 54px #101f1e88, inset 0 1px 0 #8cbd9e44",
+      "letterSpacing": "-.015em"
+    },
+    "palette": {
+      "id": "ghost-fibers",
+      "canvas": "#101f1e",
+      "surface": "#1c302e",
+      "card": "#29413c",
+      "foreground": "#f2fff8",
+      "muted": "#bdd8c9",
+      "accent": "#d3efe0",
+      "line": "#8cbd9e"
+    }
+  },
+  "acid-squares": {
+    "markupSha256": "d3cde71870696a7522a2ebb0aaa4ae50c574c506cf267ca24fd18416cf1dbc95",
+    "material": {
+      "radius": 0,
+      "borderWidth": 3,
+      "fontFamily": "\"Microsoft YaHei\", Inter, sans-serif",
+      "surface": "#2a2b18",
+      "line": "#fd77bd",
+      "accent": "#d2f04d",
+      "shadow": "8px 8px 0 #19190e, 9px 9px 0 #fd77bd55",
+      "letterSpacing": "-.035em"
+    },
+    "palette": {
+      "id": "acid-squares",
+      "canvas": "#19190e",
+      "surface": "#2a2b18",
+      "card": "#3b3e24",
+      "foreground": "#fcffeb",
+      "muted": "#d5dcad",
+      "accent": "#d2f04d",
+      "line": "#fd77bd"
+    }
+  },
+  "light-tunnel": {
+    "markupSha256": "256df8d512b0941ce8f3d0e706868cd2b8b728521a38d261385d7895fbd93854",
+    "material": {
+      "radius": 8,
+      "borderWidth": 1,
+      "fontFamily": "\"Microsoft YaHei\", Inter, sans-serif",
+      "surface": "#3a211b",
+      "line": "#efd390",
+      "accent": "#ffa568",
+      "shadow": "0 0 30px #ffa56833, inset 0 0 18px #efd39015",
+      "letterSpacing": "-.015em"
+    },
+    "palette": {
+      "id": "light-tunnel",
+      "canvas": "#25130f",
+      "surface": "#3a211b",
+      "card": "#4b2c25",
+      "foreground": "#fff5e9",
+      "muted": "#e5c6ae",
+      "accent": "#ffa568",
+      "line": "#efd390"
+    }
+  },
+  "light-pillar": {
+    "markupSha256": "2242d01d85dc639b9a1e62f3c4492ac94d918114f9f00b36fe23374d8b74790e",
+    "material": {
+      "radius": 12,
+      "borderWidth": 1,
+      "fontFamily": "\"Microsoft YaHei\", Inter, sans-serif",
+      "surface": "#2d1c38",
+      "line": "#74dac8",
+      "accent": "#e596fb",
+      "shadow": "0 0 30px #e596fb33, inset 0 0 18px #74dac815",
+      "letterSpacing": "-.015em"
+    },
+    "palette": {
+      "id": "light-pillar",
+      "canvas": "#1c1025",
+      "surface": "#2d1c38",
+      "card": "#402749",
+      "foreground": "#fff3ff",
+      "muted": "#d6c0e0",
+      "accent": "#e596fb",
+      "line": "#74dac8"
+    }
+  },
+  "floating-lines": {
+    "markupSha256": "2dda5667e039898188ab84207246d08f919d68c01c4221809b4489ade54658ad",
+    "material": {
+      "radius": 28,
+      "borderWidth": 1,
+      "fontFamily": "\"Microsoft YaHei\", Inter, sans-serif",
+      "surface": "#23303c",
+      "line": "#89c5de",
+      "accent": "#e8b794",
+      "shadow": "inset 0 1px 0 #89c5de44, 0 16px 34px #151d2566",
+      "letterSpacing": "-.015em"
+    },
+    "palette": {
+      "id": "floating-lines",
+      "canvas": "#151d25",
+      "surface": "#23303c",
+      "card": "#304252",
+      "foreground": "#f6fbff",
+      "muted": "#c0d4e0",
+      "accent": "#e8b794",
+      "line": "#89c5de"
+    }
+  },
+  "grid-scan": {
+    "markupSha256": "c8c7e6865b94f7218b5fa12d2d3d53950569f39a26f1f54f0aada218ec16381f",
+    "material": {
+      "radius": 0,
+      "borderWidth": 1,
+      "fontFamily": "\"Cascadia Code\", Consolas, \"Microsoft YaHei\", monospace",
+      "surface": "#1a2b1e",
+      "line": "#61c7a2",
+      "accent": "#b7ed82",
+      "shadow": "inset 0 1px 0 #61c7a244, 0 16px 34px #0d1a1066",
+      "letterSpacing": ".025em"
+    },
+    "palette": {
+      "id": "grid-scan",
+      "canvas": "#0d1a10",
+      "surface": "#1a2b1e",
+      "card": "#283d2a",
+      "foreground": "#f2ffef",
+      "muted": "#c0d6b8",
+      "accent": "#b7ed82",
+      "line": "#61c7a2"
+    }
+  },
+  "prismatic-burst": {
+    "markupSha256": "d89f2ad3b88c4a3e69ee8b1d8b536c2216bab6714f71d2d79581251c732ec016",
+    "material": {
+      "radius": 4,
+      "borderWidth": 2,
+      "fontFamily": "\"Microsoft YaHei\", Inter, sans-serif",
+      "surface": "#2a2442",
+      "line": "#b398f5",
+      "accent": "#ffb177",
+      "shadow": "inset 1px 1px 0 #b398f5bb, inset -2px -2px 0 #18142e, 0 12px 38px #18142e88",
+      "letterSpacing": "-.015em"
+    },
+    "palette": {
+      "id": "prismatic-burst",
+      "canvas": "#18142e",
+      "surface": "#2a2442",
+      "card": "#3b3155",
+      "foreground": "#fff8ff",
+      "muted": "#d2c8e7",
+      "accent": "#ffb177",
+      "line": "#b398f5"
+    }
+  }
+}

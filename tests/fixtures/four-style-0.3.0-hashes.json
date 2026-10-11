@@ -1,0 +1,54 @@
+{
+  "balatro": {
+    "markupSha256": "e36ebdfe5ff0a329657b03319237d8bfd3f9d1c228fbfa4f8d3b3cd45ec079cb",
+    "material": {
+      "radius": 18,
+      "fontFamily": "\"Microsoft YaHei\", Inter, sans-serif",
+      "surface": "#101a22",
+      "line": "#f3baa8",
+      "accent": "#e5654b",
+      "shadow": "0 18px 60px #00000066, inset 0 1px 0 #ffffff33",
+      "letterSpacing": "-0.025em",
+      "borderWidth": 1
+    }
+  },
+  "crt-warp": {
+    "markupSha256": "3d086081b51a92ff259c5bdba781aaeb7de5bf14d45f2ced4c7eedcfdeed4c99",
+    "material": {
+      "radius": 2,
+      "fontFamily": "\"Cascadia Code\", Consolas, \"Microsoft YaHei\", monospace",
+      "surface": "#050d0a",
+      "line": "#5eddaa",
+      "accent": "#9effbb",
+      "shadow": "0 0 28px #9effbb24, inset 0 0 28px #9effbb0b",
+      "letterSpacing": "0.025em",
+      "borderWidth": 1
+    }
+  },
+  "cubes": {
+    "markupSha256": "302777acfbe890b589973f12ef7f01043e429c8c70c11fe725b615a920669f97",
+    "material": {
+      "radius": 0,
+      "fontFamily": "\"Microsoft YaHei\", Arial, sans-serif",
+      "surface": "#191b1f",
+      "line": "#f5e6c8",
+      "accent": "#ff9a45",
+      "shadow": "10px 10px 0 #191b1f",
+      "letterSpacing": "-0.04em",
+      "borderWidth": 2
+    }
+  },
+  "hyperspeed": {
+    "markupSha256": "163a1d5e6036186d5349725ddf23590c343d578614db7c6518f2f530d4a7196b",
+    "material": {
+      "radius": 4,
+      "fontFamily": "Inter, \"Microsoft YaHei\", sans-serif",
+      "surface": "#070b18",
+      "line": "#67e6ff",
+      "accent": "#f459be",
+      "shadow": "0 8px 36px #00000088",
+      "letterSpacing": "-0.035em",
+      "borderWidth": 1
+    }
+  }
+}

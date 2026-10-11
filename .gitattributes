@@ -1,0 +1,6 @@
+# Preserve audited implementation bytes exactly; do not normalize line endings.
+* -text
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
