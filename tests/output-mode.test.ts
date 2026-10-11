@@ -1,3 +1,4 @@
+import {join} from 'node:path';
 import {describe, expect, it} from 'vitest';
 import {selectDynamicBeats} from '../scripts/lib/visual-gates';
 import {buildMasterAudioMuxArgs, buildOverlayFfmpegArgs, buildOverlaySequenceFlags, buildRemotionOutputFlags, resolveOutputMode, syntheticOverlayProbe} from '../scripts/lib/output-mode';
@@ -41,7 +42,7 @@ describe('packaging output modes', () => {
     expect(buildOverlaySequenceFlags()).toEqual(['--sequence', '--image-format', 'png', '--image-sequence-pattern', 'frame-[frame].[ext]', '--muted']);
     expect(buildOverlayFfmpegArgs({sequenceDir: 'C:/frames', output: 'C:/out/overlay.mov', fps: 30, totalFrames: 1478})).toEqual([
       '-y', '-v', 'error', '-framerate', '30', '-start_number', '0',
-      '-i', 'C:\\frames\\frame-%04d.png', '-an',
+      '-i', join('C:/frames', 'frame-%04d.png'), '-an',
       '-c:v', 'prores_ks', '-profile:v', '4', '-pix_fmt', 'yuva444p10le',
       '-threads', '1', '-filter_threads', '1', '-filter_complex_threads', '1',
       'C:/out/overlay.mov',
